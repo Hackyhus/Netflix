@@ -1,0 +1,173 @@
+.login {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(#0000007e, #0000007e),
+    url(/background_banner.jpg);
+}
+.login-logo {
+    position: absolute;
+    top: 35px;
+    left: 65px;
+    margin: 10px; /* Adjust margin as needed */
+    width: 160px; /* Adjust width as needed */
+    height: auto;
+}
+
+.login-form {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 60px;
+  border-radius: 4px;
+  margin: auto;
+  max-width: 600px;
+  width: 100%;
+  color: white;
+}
+
+.login-form h1 {
+  margin-bottom: 28px;
+}
+
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input-group input {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+  border: none;
+  outline: 0;
+  border-radius: 4px;
+  background: #454343;
+  color: white;
+}
+
+.login-button {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 4px;
+  background: #e50914;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-help {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+/* .login-help div input{ 
+    size: 20px;
+}
+.login-help div label {
+    color: #e50914;
+} */
+
+.cyberpunk-checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #dc2626;
+    border-radius: 5px;
+    background-color: transparent;
+    display: inline;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .cyberpunk-checkbox:before {
+    content: "";
+    background-color: #c11f1f;
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cyberpunk-checkbox:checked:before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .cyberpunk-checkbox-label {
+    font-size: 15px;
+    color: #b3b3b3;
+    cursor: pointer;
+    user-select: none;
+    display: inline;
+    align-items: center;
+  }
+
+.login-help a {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.login-help .help-hover{
+   display: none
+   ;
+}
+
+.login-help a:hover .help-hover {
+  text-decoration: underline;
+}
+
+.form-switch{
+    margin-top: 40px;
+    color: #b3b3b3;
+}
+
+.form-switch span{
+    margin-left: 6px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Login.css */
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+ width: 100vw;
+  background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent black background */
+}
+
+.loading img {
+  width: 100px; /* Adjust the size of the spinner as needed */
+  height: 100px;
+}
+
+@media (max-width: 500px) {
+  .login{
+    padding: 15px 5%;
+  }
+  .login-form {
+    padding: 15px ;
+    margin-top: 70px;
+  }
+
+  .login-logo {
+    width: 120px;
+  }
+
+  .login-button {
+    padding: 8px;
+  }
+}
