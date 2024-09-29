@@ -9,7 +9,6 @@ import {
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import { toast } from "react-toastify";
 
-
 const firebaseConfig = {
   apiKey: "AIzaSyCBa_yIPzFB9cQD8Rom6veGHYyqjN6fd-g",
   authDomain: "netflix-app-43704.firebaseapp.com",
@@ -25,8 +24,6 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 
-
-
 const signup = async (name, email, password) => {
   try {
     const res = await createUserWithEmailAndPassword(auth, email, password);
@@ -36,6 +33,7 @@ const signup = async (name, email, password) => {
       name,
       authProvider: "local",
       email,
+      password,
       // Do not store the password in Firestore
     });
   } catch (error) {
